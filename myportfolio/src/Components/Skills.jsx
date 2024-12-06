@@ -1,6 +1,6 @@
 
 function Skills() {
-  const skills = ['React', 'JavaScript', 'CSS', 'HTML', 'Tailwind'];
+  const skills = ['React', 'JavaScript', 'CSS', 'HTML', 'Tailwind', 'TypeScript'];
 
   return (
     <section className="skills">

@@ -4,7 +4,9 @@ function NavBar() {
     return (
         <nav className='navbar'>
             <div className='nav-content'>
-               <h1 className='nav-logo'>Thando Funeka</h1>
+               <div className='navbar-left'>
+                <img src="./public/favicon/android-chrome-192x192.png" alt="My Profile Picture" className='navbar-image' />
+               </div>
 
                <div className='nav-links'>
                 <Link to='/' className='nav-link'>Home</Link>
