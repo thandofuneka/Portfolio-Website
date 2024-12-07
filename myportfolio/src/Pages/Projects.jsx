@@ -19,7 +19,10 @@ function Projects() {
         ))}
       </div>
       {selectedProject && (
-        <ProjectDetails project={selectedProject} onClose={() => setSelectedProject(null)} />
+        <ProjectDetails 
+          project={selectedProject} 
+          onClose={() => setSelectedProject(null)}
+       />
       )}
     </div>
     

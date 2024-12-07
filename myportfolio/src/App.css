@@ -138,50 +138,66 @@ h1, h2, h3 {
   font-size: 0.9em;
 }
 
-.project-details {
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px);    /* Blurs the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.modal-content {
   background: #1E1E1E;
   color: #FFF;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 174, 239, 0.5);
+  position: relative;
 }
 
-.project-details .close-button {
-  background: #00AEEF;
-  color: white;
+.modal-content .close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  color: #FFF;
+  font-size: 1.5em;
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 1em;
 }
 
-.project-details .close-button:hover {
-  background: #007A99;
+.modal-content .close-button:hover {
+  color: #00AEEF;
 }
 
-.project-details .detail-image {
+.modal-content .detail-image {
   width: 100%;
   height: auto;
   border-radius: 10px;
   margin: 20px 0;
 }
 
-.project-details .tech-list {
+.modal-content .tech-list {
   list-style: none;
   padding: 0;
   margin: 20px 0;
 }
 
-.project-details .tech-list li {
+.modal-content .tech-list li {
   margin: 5px 0;
   color: #00AEEF;
 }
 
-.project-details .repo-link {
+.modal-content .repo-link {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -191,7 +207,7 @@ h1, h2, h3 {
   border-radius: 5px;
 }
 
-.project-details .repo-link:hover {
+.modal-content .repo-link:hover {
   background: #007A99;
 }
 
