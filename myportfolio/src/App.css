@@ -253,6 +253,10 @@ button:hover {
     margin: 20px;
   }
 
+  .modal-content {
+    width: 50%;
+  }
+
 }
 
 
