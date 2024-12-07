@@ -249,6 +249,10 @@ button:hover {
     justify-content: center;
   }
 
+  .projects {
+    margin: 20px;
+  }
+
 }
 
 
