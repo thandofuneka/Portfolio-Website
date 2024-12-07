@@ -104,8 +104,8 @@ h1, h2, h3 {
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   
 }
@@ -113,6 +113,7 @@ h1, h2, h3 {
 .project-card {
   background: #282828;
   padding: 20px;
+  width: 350px;
   border: 1px solid #00AEEF;
   border-radius: 5px;
   cursor: pointer;
@@ -242,8 +243,8 @@ button:hover {
   }
 
   .project-grid {
-    grid-template-columns: 1fr;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
