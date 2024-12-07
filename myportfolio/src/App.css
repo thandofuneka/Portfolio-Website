@@ -258,6 +258,7 @@ button:hover {
   .modal-content {
     width: 85%;
     max-height: 80%;
+    padding-bottom: 28px;
     
   }
 
