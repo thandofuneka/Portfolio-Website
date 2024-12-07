@@ -5,7 +5,7 @@ function NavBar() {
         <nav className='navbar'>
             <div className='nav-content'>
                <div className='navbar-left'>
-                <img src="./public/favicon/android-chrome-192x192.png" alt="My Profile Picture" className='navbar-image' />
+                <img src="./favicon/android-chrome-192x192.png" alt="My Profile Picture" className='navbar-image' />
                </div>
 
                <div className='nav-links'>
